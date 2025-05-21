@@ -20,3 +20,19 @@
 () - parentheses
 [] - square brackets
 
+>>> l1 = [1, 2, 3]
+>>> l2 = l1
+>>> l2
+[1, 2, 3]
+>>> l1[0] = 33
+>>> l2
+[33, 2, 3]
+>>> l1 == l2
+True
+>>> l1 is l2
+True
+>>> l2 = l1[:]
+>>> l1 is l2
+False
+>>> l1 == l2
+True
